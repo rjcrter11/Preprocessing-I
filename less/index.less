@@ -69,10 +69,13 @@ table {
 .headertwo() {
 	font-size: 4rem; 
 	font-family: @headerone-font;
+	text-align: left;
+	
 }
 .headerthree() {
 	font-size: 2.5rem; 
 	letter-spacing: .5rem; 
+	padding: 0 1%; 
 }
 .resumeBoxes() {
 	display: flex;
@@ -82,16 +85,16 @@ table {
 }
 .boxes-right() {
 	border-left: 2px solid @accent-color;
-	width: 55%; 
+	width: 75%; 
 }
 .boxes-left() {
-	width: 40%; 
+	width: 25%; 
 }
 .ul-styles() {
 	font-size: 1.8rem;
 	padding: 1vh 0;
 	margin-left: 4%; 
-	line-height: 2rem;
+	line-height: 2.5rem;
 }
 
 /* Set every element's box-sizing to border-box */
@@ -113,10 +116,7 @@ h1 {
 	.headerone();
 }
 
-strong {
-	font-size: 1.8rem; 
-	font-weight: bold;
-}
+
 
 
 
@@ -148,14 +148,24 @@ header {
 	.header-box {
 		display: flex;
 		justify-content: space-between;
-
+		.contact {
+			width: 40%; 
+			p {
+				font-size: 1.8rem;
+			}
+			strong {
+				font-size: 2.2rem;
+				font-weight: bold;
+			}
+		} //closes contact
 		p {
-			font-size: 1.6rem; 
+			font-size: 1.8rem; 
 		} //closes paragraph
 	
 	.about {
 		width: 40%; 
 		line-height: 2rem;
+		padding: .5vh 0 0 0; 
  	} //closes about
  } //closes header box
  } //closes header 
@@ -176,7 +186,7 @@ header {
 
 		.work-history-left {
 			  
-			width: 40%;
+			.boxes-left();
 		} //closes work left
 		.work-history-right {
 			.boxes-right();
@@ -192,11 +202,13 @@ header {
 		
 		.skills-left {
 			 
-			width: 40%;
+			.boxes-left();
 		} //closes skills left
 		.skills-right {
-			
 			.boxes-right();
+			li {
+				.ul-styles();
+			}
 		} //closes skills right 
 	} //closes skills box
 	.education-box {
@@ -204,15 +216,34 @@ header {
 
 		.education-left {
 			 
-			width: 20%;
+			.boxes-left();
 		} //closes education left
 		.education-right {
 			.boxes-right();
 			p {
-				font-size: 1.6rem; 
+				font-size: 2rem; 
+				line-height: 6rem;
+				padding: 2vh 2%; 
 			}
 		} //closes education right 
 	} //closes  education box
-
-
 } // closes main-content section
+
+footer {
+	.footer-box {
+		display: flex;
+		justify-content: center; 
+		background-color: @main-color;
+		width: 70%; 
+		height: 4vh; 
+		align-items: center;
+		margin-left: 12%; 
+
+	p {
+	font-size: 2rem;
+	text-align: center;
+	color: @accent-color; 
+ } //closes paragraph	
+	} //closes footer box
+ 
+} //closes footer 
