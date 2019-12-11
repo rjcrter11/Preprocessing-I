@@ -46,6 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 @import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
 
 @headerone-font: 'Russo One', sans-serif;
@@ -76,18 +77,21 @@ table {
 .resumeBoxes() {
 	display: flex;
 	justify-content: space-between;
-	height: 20vh; 
+	height: 35vh; 
 	padding: 3vh 3%;
 }
 .boxes-right() {
-	border-left: 1px solid @accent-color;
-	width: 40%; 
+	border-left: 2px solid @accent-color;
+	width: 55%; 
 }
 .boxes-left() {
 	width: 40%; 
 }
 .ul-styles() {
-	font-size: 1.5rem; 
+	font-size: 1.8rem;
+	padding: 1vh 0;
+	margin-left: 4%; 
+	line-height: 2rem;
 }
 
 /* Set every element's box-sizing to border-box */
@@ -175,9 +179,10 @@ header {
 			width: 40%;
 		} //closes work left
 		.work-history-right {
-			width: 40%; 
+			.boxes-right();
+			 
 			li {
-				font-size: 1.5rem; 
+				.ul-styles(); 
 			}
 			
 		} //closes work right 
@@ -191,7 +196,7 @@ header {
 		} //closes skills left
 		.skills-right {
 			
-			width: 40%;
+			.boxes-right();
 		} //closes skills right 
 	} //closes skills box
 	.education-box {
@@ -202,7 +207,7 @@ header {
 			width: 20%;
 		} //closes education left
 		.education-right {
-			width: 40%;
+			.boxes-right();
 			p {
 				font-size: 1.6rem; 
 			}
