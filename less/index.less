@@ -19,9 +19,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+
+	// font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -33,7 +32,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	list-style: square;
 }
 blockquote, q {
 	quotes: none;
@@ -47,15 +46,168 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+
+@headerone-font: 'Russo One', sans-serif;
+@anchor-color: #2F4550;
+@main-color: #586F7C;
+@accent-color: #B8DBD9;
+
+.anchors() {
+	font-size: 2.3rem; 
+	text-decoration: none;
+	color: @anchor-color; 
+	width: 7%;  
+	text-align: right;
+}
+
+.headerone() {
+	font-size: 10rem;
+	font-family: @headerone-font;
+}
+.headertwo() {
+	font-size: 4rem; 
+	font-family: @headerone-font;
+}
+.headerthree() {
+	font-size: 2.5rem; 
+	letter-spacing: .5rem; 
+}
+.resumeBoxes() {
+	display: flex;
+	justify-content: space-between;
+	height: 20vh; 
+	padding: 3vh 3%;
+}
+.boxes-right() {
+	border-left: 1px solid @accent-color;
+	width: 40%; 
+}
+.boxes-left() {
+	width: 40%; 
+}
+.ul-styles() {
+	font-size: 1.5rem; 
+}
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+		box-sizing: border-box;
+		max-width: 100%;
+}
+
+html, body {
+		height: 100%;
+		
 }
 html {
 	font-size: 62.5%;
-}
-html, body {
-		height: 100%;
+	
 }
 
+h1 {
+	.headerone();
+}
+
+strong {
+	font-size: 1.8rem; 
+	font-weight: bold;
+}
+
+
+
+
+
+.container {
+	width: 80%; 
+	margin: 0 auto; 
+	padding: 0 2%; 
+}
+.nav-wrapper {
+	display: flex;
+	justify-content: flex-end;
+	text-decoration: none;
+	align-items: flex-end;
+	width: 100%; 
+	height: 2vh; 
+	font-size: 1rem; 
+
+	a {
+		.anchors();
+	} //closes anchor
+} //closes nav-wrapper
+
+
+
+header {
+	background-color: @main-color; 
+	.header-box {
+		display: flex;
+		justify-content: space-between;
+
+		p {
+			font-size: 1.6rem; 
+		} //closes paragraph
+	
+	.about {
+		width: 40%; 
+		line-height: 2rem;
+ 	} //closes about
+ } //closes header box
+ } //closes header 
+
+ .main-content { 
+ 	width: 100%; 
+
+ 	h2 {
+ 		.headertwo();
+ 	}
+ 	h3 {
+ 		.headerthree();
+ 	}
+	
+	
+	.work-box {
+		.resumeBoxes();
+
+		.work-history-left {
+			  
+			width: 40%;
+		} //closes work left
+		.work-history-right {
+			width: 40%; 
+			li {
+				font-size: 1.5rem; 
+			}
+			
+		} //closes work right 
+	} //closes work box
+	.skills-box {
+		.resumeBoxes();
+		
+		.skills-left {
+			 
+			width: 40%;
+		} //closes skills left
+		.skills-right {
+			
+			width: 40%;
+		} //closes skills right 
+	} //closes skills box
+	.education-box {
+		.resumeBoxes();
+
+		.education-left {
+			 
+			width: 20%;
+		} //closes education left
+		.education-right {
+			width: 40%;
+			p {
+				font-size: 1.6rem; 
+			}
+		} //closes education right 
+	} //closes  education box
+
+
+} // closes main-content section
