@@ -183,6 +183,7 @@ h1 {
 @media (max-width: 500px) {
   .nav-wrapper {
     justify-content: space-between;
+    height: 3vh;
   }
 }
 .header-box {
@@ -251,7 +252,7 @@ h1 {
   .main-content .work-box {
     flex-direction: column;
     justify-content: space-between;
-    height: 45vh;
+    height: 53vh;
   }
   .main-content .work-box h2 {
     margin-bottom: 2vh;
