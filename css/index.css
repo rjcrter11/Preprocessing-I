@@ -244,7 +244,7 @@ h1 {
 }
 @media (max-width: 500px) {
   .main-content {
-    height: 140vh;
+    height: 155vh;
   }
 }
 .main-content .work-box {
@@ -258,7 +258,7 @@ h1 {
   .main-content .work-box {
     flex-direction: column;
     justify-content: space-between;
-    height: 53vh;
+    height: 61vh;
   }
   .main-content .work-box h2 {
     margin-bottom: 2vh;
@@ -294,7 +294,7 @@ h1 {
   .main-content .skills-box {
     flex-direction: column;
     justify-content: space-between;
-    height: 45vh;
+    height: 49vh;
   }
   .main-content .skills-box h2 {
     margin-bottom: 1vh;
