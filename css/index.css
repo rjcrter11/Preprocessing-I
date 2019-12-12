@@ -170,7 +170,7 @@ h1 {
   font-size: 2.3rem;
   text-decoration: none;
   color: #2F4550;
-  width: 7%;
+  width: 12%;
   text-align: right;
 }
 @media (max-width: 500px) {
@@ -196,7 +196,7 @@ h1 {
 }
 .header-box .cthulhu-image img {
   width: 100%;
-  height: 20vh;
+  height: 27vh;
 }
 @media (max-width: 500px) {
   .header-box .cthulhu-image {
@@ -231,6 +231,7 @@ h1 {
 }
 .main-content {
   width: 100%;
+  height: 120vh;
 }
 .main-content h2 {
   font-size: 4rem;
@@ -242,11 +243,17 @@ h1 {
   letter-spacing: 0.5rem;
   padding: 0 1%;
 }
+@media (max-width: 500px) {
+  .main-content {
+    height: 140vh;
+  }
+}
 .main-content .work-box {
   display: flex;
   justify-content: space-between;
-  height: 35vh;
+  height: 38vh;
   padding: 3vh 3%;
+  margin: 1.5vh 0;
 }
 @media (max-width: 500px) {
   .main-content .work-box {
@@ -280,8 +287,9 @@ h1 {
 .main-content .skills-box {
   display: flex;
   justify-content: space-between;
-  height: 35vh;
+  height: 38vh;
   padding: 3vh 3%;
+  margin: 1.5vh 0;
 }
 @media (max-width: 500px) {
   .main-content .skills-box {
@@ -315,8 +323,9 @@ h1 {
 .main-content .education-box {
   display: flex;
   justify-content: space-between;
-  height: 35vh;
+  height: 38vh;
   padding: 3vh 3%;
+  margin: 1.5vh 0;
 }
 @media (max-width: 500px) {
   .main-content .education-box {
