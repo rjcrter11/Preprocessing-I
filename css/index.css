@@ -151,10 +151,16 @@ h1 {
   margin: 0 auto;
   padding: 0 2%;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
 .nav-wrapper {
   display: flex;
   justify-content: flex-end;
-  text-decoration: none;
   align-items: flex-end;
   width: 100%;
   height: 2vh;
@@ -167,12 +173,27 @@ h1 {
   width: 7%;
   text-align: right;
 }
+@media (max-width: 500px) {
+  .nav-wrapper a {
+    text-align: center;
+    justify-self: center;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .nav-wrapper {
+    justify-content: space-between;
+  }
+}
 header {
   background-color: #586F7C;
 }
 header .header-box {
   display: flex;
   justify-content: space-between;
+}
+header .header-box .header-info {
+  width: 50%;
 }
 header .header-box .contact {
   width: 40%;
